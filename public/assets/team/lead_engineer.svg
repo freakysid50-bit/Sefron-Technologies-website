@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="60%" stop-color="#1C2541" />
+      <stop offset="100%" stop-color="#3A506B" />
+    </linearGradient>
+    <linearGradient id="skin2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCD5B5" />
+      <stop offset="100%" stop-color="#E5AA84" />
+    </linearGradient>
+    <linearGradient id="suit2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="480" fill="url(#bg2)" />
+  <circle cx="200" cy="180" r="140" fill="#38BDF8" opacity="0.08" />
+  
+  <!-- Shoulders & Blazer -->
+  <path d="M 50 480 L 115 320 C 140 295 165 290 200 290 C 235 290 260 295 285 320 L 350 480 Z" fill="url(#suit2)" />
+  <polygon points="175,290 200,340 225,290 215,280 185,280" fill="#0284C7" />
+  <polygon points="200,340 190,480 210,480" fill="#0369A1" />
+
+  <!-- Neck -->
+  <rect x="182" y="225" width="36" height="70" rx="8" fill="#E5AA84" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="62" ry="78" fill="url(#skin2)" />
+  <ellipse cx="138" cy="195" rx="9" ry="17" fill="#E5AA84" />
+  <ellipse cx="262" cy="195" rx="9" ry="17" fill="#E5AA84" />
+
+  <!-- Hair -->
+  <path d="M 136 170 C 136 110 165 105 200 105 C 235 105 264 110 264 170 C 264 180 255 155 245 145 C 230 135 170 135 155 145 C 145 155 136 180 136 170 Z" fill="#2C3E50" />
+
+  <!-- Eyebrows & Eyes -->
+  <path d="M 162 170 Q 177 165 192 168" stroke="#1A1B22" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M 208 168 Q 223 165 238 170" stroke="#1A1B22" stroke-width="4" stroke-linecap="round" fill="none" />
+  <ellipse cx="177" cy="182" rx="6.5" ry="5" fill="#1A1B22" />
+  <ellipse cx="223" cy="182" rx="6.5" ry="5" fill="#1A1B22" />
+  <circle cx="179" cy="180" r="2" fill="#FFFFFF" />
+  <circle cx="225" cy="180" r="2" fill="#FFFFFF" />
+
+  <!-- Modern Glasses -->
+  <rect x="160" y="172" width="34" height="22" rx="6" stroke="#00A3FF" stroke-width="3" fill="rgba(0,163,255,0.08)" />
+  <rect x="206" y="172" width="34" height="22" rx="6" stroke="#00A3FF" stroke-width="3" fill="rgba(0,163,255,0.08)" />
+  <line x1="194" y1="182" x2="206" y2="182" stroke="#00A3FF" stroke-width="3" />
+
+  <!-- Nose & Smile -->
+  <path d="M 200 185 L 197 210 L 203 210" stroke="#C68652" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 188 230 Q 200 240 212 230" stroke="#334155" stroke-width="2.5" stroke-linecap="round" fill="none" />
+</svg>

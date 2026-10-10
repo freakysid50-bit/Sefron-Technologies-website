@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="60%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2A77A" />
+      <stop offset="100%" stop-color="#C68652" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090E1A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1B22" />
+      <stop offset="100%" stop-color="#0A0B10" />
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A3FF" />
+      <stop offset="100%" stop-color="#0066CC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="480" fill="url(#bgGrad)" />
+  <circle cx="200" cy="180" r="140" fill="#00A3FF" opacity="0.08" />
+
+  <!-- Shoulders & Tailored Suit -->
+  <g>
+    <!-- Dark Tech Suit Jacket -->
+    <path d="M 50 480 L 110 320 C 135 295 160 290 200 290 C 240 290 265 295 290 320 L 350 480 Z" fill="url(#suitGrad)" />
+    <!-- Lapels -->
+    <path d="M 110 320 L 165 480 L 195 480 L 175 320 Z" fill="#0D1322" />
+    <path d="M 290 320 L 235 480 L 205 480 L 225 320 Z" fill="#131B2E" />
+    <!-- Lapel Accent Pin -->
+    <circle cx="150" cy="355" r="3.5" fill="#00A3FF" />
+    <!-- Shirt / Collar -->
+    <polygon points="175,290 200,345 225,290 215,280 185,280" fill="#F8FAFC" />
+    <polygon points="200,345 190,480 210,480" fill="#E2E8F0" />
+  </g>
+
+  <!-- Neck -->
+  <rect x="180" y="225" width="40" height="70" rx="8" fill="#C68652" />
+  <path d="M 180 250 Q 200 275 220 250 L 220 280 L 180 280 Z" fill="#A86838" opacity="0.4" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="65" ry="80" fill="url(#skinGrad)" />
+
+  <!-- Ears -->
+  <ellipse cx="135" cy="195" rx="10" ry="18" fill="#C68652" />
+  <ellipse cx="265" cy="195" rx="10" ry="18" fill="#C68652" />
+
+  <!-- Modern Hair -->
+  <path d="M 132 170 C 132 105 165 100 200 100 C 238 100 268 105 268 170 C 268 180 260 160 250 150 C 235 135 165 135 150 150 C 140 160 132 180 132 170 Z" fill="url(#hairGrad)" />
+  <path d="M 135 160 Q 200 115 265 160 Q 240 130 200 130 Q 160 130 135 160 Z" fill="#2D303E" opacity="0.5" />
+
+  <!-- Eyebrows -->
+  <path d="M 160 170 Q 175 164 190 168" stroke="#1A1B22" stroke-width="4.5" stroke-linecap="round" fill="none" />
+  <path d="M 210 168 Q 225 164 240 170" stroke="#1A1B22" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes -->
+  <ellipse cx="175" cy="182" rx="7" ry="5.5" fill="#1A1B22" />
+  <ellipse cx="225" cy="182" rx="7" ry="5.5" fill="#1A1B22" />
+  <circle cx="177" cy="180" r="2" fill="#FFFFFF" />
+  <circle cx="227" cy="180" r="2" fill="#FFFFFF" />
+
+  <!-- Nose -->
+  <path d="M 200 180 L 196 208 L 204 208" stroke="#A86838" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Beard / Mustache (Well-groomed) -->
+  <path d="M 188 222 Q 200 220 212 222" stroke="#1A1B22" stroke-width="2.5" fill="none" />
+  <path d="M 175 220 C 175 255 225 255 225 220 C 220 242 180 242 175 220 Z" fill="#1A1B22" opacity="0.85" />
+
+  <!-- Smile -->
+  <path d="M 186 230 Q 200 240 214 230" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Clean Tech Badge -->
+  <g transform="translate(20, 20)">
+    <rect width="130" height="26" rx="13" fill="rgba(0, 163, 255, 0.15)" stroke="rgba(0, 163, 255, 0.4)" stroke-width="1" />
+    <circle cx="14" cy="13" r="4" fill="#00D2FF" />
+    <text x="25" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10.5" fill="#38BDF8" letter-spacing="0.8">FOUNDER &amp; CEO</text>
+  </g>
+</svg>

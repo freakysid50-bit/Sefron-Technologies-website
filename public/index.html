@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Metadata -->
+  <title>Sefron Technologies | Digital Solutions, AI & Software Development</title>
+  <meta name="description" content="Sefron Technologies builds websites, mobile applications, AI agents, custom software and scalable digital products for modern businesses.">
+  <meta name="keywords" content="Sefron Technologies, Web Development, Mobile App Development, AI Agents, Custom Software, UI UX Design, SaaS Products, B2B Technology">
+  <meta name="author" content="Sefron Technologies">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sefron Technologies | Digital Solutions, AI & Software Development">
+  <meta property="og:description" content="Sefron Technologies builds websites, mobile applications, AI agents, custom software and scalable digital products for modern businesses.">
+  <meta property="og:image" content="/assets/logo.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Firebase Web SDK Modular Import Map -->
+  <script type="importmap">
+    {
+      "imports": {
+        "firebase/app": "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js",
+        "firebase/firestore": "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Brand Logo Left -->
+      <a href="#home" class="nav-brand" aria-label="Sefron Technologies Home">
+        <img src="/assets/logo-mark-3d.png" alt="Sefron Technologies Mark" class="brand-logo-img">
+        <span class="brand-logo-text">
+          <span class="brand-logo-name">SEFR<span class="brand-logo-o">O</span>N</span>
+          <span class="brand-logo-sub">TECHNOLOGIES</span>
+          <span class="brand-logo-tagline">BUILD · AUTOMATE · CREATE</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Right -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#uniqueness" class="nav-link">Uniqueness</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#team" class="nav-link">Meet Our Team</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Primary CTA & Hamburger -->
+      <div class="nav-actions">
+        <a href="tel:+919003410301" class="btn-call" id="navCallBtn" aria-label="Call +91 9003410301">
+          <svg class="call-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span class="call-text">Call Us</span>
+        </a>
+        <a href="#contact" class="btn btn-primary" id="navCtaBtn">
+          Start a Project <span class="btn-icon">&rarr;</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-top">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 28px;">
+        <img src="/assets/logo-mark-3d.png" alt="Sefron Technologies Mark" class="brand-logo-img" style="height: 38px; width: auto;">
+        <span class="brand-logo-text">
+          <span class="brand-logo-name" style="font-size: 1.2rem;">SEFR<span class="brand-logo-o">O</span>N</span>
+          <span class="brand-logo-sub" style="font-size: 0.46rem; letter-spacing: 0.42em;">TECHNOLOGIES</span>
+          <span class="brand-logo-tagline" style="font-size: 0.32rem; letter-spacing: 0.18em;">BUILD · AUTOMATE · CREATE</span>
+        </span>
+      </div>
+      <nav class="mobile-nav-list">
+        <a href="#home" class="mobile-nav-link active">Home</a>
+        <a href="#uniqueness" class="mobile-nav-link">Uniqueness</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#team" class="mobile-nav-link">Meet Our Team</a>
+        <a href="#contact" class="mobile-nav-link">Contact Us</a>
+      </nav>
+    </div>
+    <div class="mobile-drawer-bottom">
+      <a href="tel:+919003410301" class="btn btn-call-mobile" style="width: 100%; text-align: center; margin-bottom: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+        <svg class="call-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Call +91 9003410301</span>
+      </a>
+      <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">
+        Start a Project &rarr;
+      </a>
+      <p style="margin-top: 16px; font-size: 0.8125rem; color: #64748B; text-align: center;">
+        BUILD / AUTOMATE / CREATE
+      </p>
+    </div>
+  </div>
+  <div class="mobile-drawer-backdrop" id="mobileBackdrop"></div>
+
+  <main>
+    <!-- ==========================================================================
+         1. HOME PAGE — HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        
+        <!-- Centerpiece Master Logo with Gentle Floating & Shaking Micro-animation -->
+        <div class="hero-brand-centerpiece reveal-on-scroll is-revealed">
+          <div class="centerpiece-logo-wrapper" id="centerpieceLogoWrapper">
+            <img src="/assets/logo-mark-3d.png" alt="Sefron Technologies" class="centerpiece-logo-img">
+            <h2 class="centerpiece-wordmark">
+              <span class="wordmark-s">S</span><span class="wordmark-e">E</span><span class="wordmark-f">F</span><span class="wordmark-r">R</span><span class="wordmark-o">O</span><span class="wordmark-n">N</span>
+            </h2>
+            <p class="centerpiece-subtext">TECHNOLOGIES</p>
+            <p class="centerpiece-tagline">BUILD &nbsp;&nbsp;/&nbsp;&nbsp; AUTOMATE &nbsp;&nbsp;/&nbsp;&nbsp; CREATE</p>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          
+          <!-- Left Content -->
+          <div class="hero-content reveal-on-scroll is-revealed">
+            <div class="hero-tag">
+              <span class="hero-tag-pulse"></span>
+              <span class="hero-tag-text">B2B Technology & Digital Product Engineering</span>
+            </div>
+
+            <h1 class="hero-title">
+              We Build. <br>
+              We Innovate. <br>
+              <span class="hero-title-highlight">We Scale.</span>
+            </h1>
+
+            <p class="hero-desc">
+              Sefron Technologies transforms ideas into powerful digital experiences through websites, mobile applications, AI agents, custom software and scalable digital products.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn btn-primary" id="heroStartProjectBtn">
+                Start a Project <span class="btn-icon">&rarr;</span>
+              </a>
+              <a href="#services" class="btn btn-secondary" id="heroExploreServicesBtn">
+                Explore Our Services
+              </a>
+            </div>
+
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <span class="trust-number">100%</span>
+                <span class="trust-label">Custom Architecture</span>
+              </div>
+              <div class="trust-divider"></div>
+              <div class="trust-item">
+                <span class="trust-number">AI-First</span>
+                <span class="trust-label">Intelligent Automation</span>
+              </div>
+              <div class="trust-divider"></div>
+              <div class="trust-item">
+                <span class="trust-number">Enterprise</span>
+                <span class="trust-label">Scalable Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Tech Visual -->
+          <div class="hero-visual-wrapper reveal-on-scroll is-revealed">
+            <div class="hero-tech-card">
+              <div class="tech-card-header">
+                <div class="tech-card-dots">
+                  <span class="tech-dot red"></span>
+                  <span class="tech-dot yellow"></span>
+                  <span class="tech-dot green"></span>
+                </div>
+                <div class="tech-card-badge">SEFRON CORE ARCHITECTURE</div>
+              </div>
+
+              <div class="tech-card-canvas-container">
+                <canvas id="heroTechCanvas"></canvas>
+
+                <!-- Floating Technology Indicator Badges -->
+                <div class="floating-node node-1">
+                  <div class="node-icon-wrapper">⚡</div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: #94A3B8;">ENGINEERING</div>
+                    <div>AI Agents & Automation</div>
+                  </div>
+                </div>
+
+                <div class="floating-node node-2">
+                  <div class="node-icon-wrapper">🚀</div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: #94A3B8;">PERFORMANCE</div>
+                    <div>Scalable Cloud & SaaS</div>
+                  </div>
+                </div>
+
+                <div class="floating-node node-3">
+                  <div class="node-icon-wrapper">🛡️</div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: #94A3B8;">SECURITY</div>
+                    <div>Enterprise Systems</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — COMPANY INTRODUCTION
+         ========================================================================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="intro-grid reveal-on-scroll">
+          <div class="intro-content-box">
+            <div class="section-badge">
+              <span class="section-badge-dot"></span>
+              <span>Our Philosophy</span>
+            </div>
+            <h2 class="section-title">
+              Technology That Turns Ideas Into Reality
+            </h2>
+            <p class="intro-main-text">
+              At Sefron Technologies, we combine software engineering, creative design and artificial intelligence to build digital solutions that solve real business problems. From a simple website to an intelligent AI-powered platform, we help businesses move from idea to execution.
+            </p>
+
+            <div class="highlight-cards-grid">
+              <!-- 01 Build -->
+              <div class="highlight-card">
+                <div class="highlight-number">01</div>
+                <h3 class="highlight-title">Build</h3>
+                <p class="highlight-desc">Turning ideas into reliable digital products.</p>
+              </div>
+
+              <!-- 02 Automate -->
+              <div class="highlight-card">
+                <div class="highlight-number">02</div>
+                <h3 class="highlight-title">Automate</h3>
+                <p class="highlight-desc">Using AI and automation to simplify business processes.</p>
+              </div>
+
+              <!-- 03 Scale -->
+              <div class="highlight-card">
+                <div class="highlight-number">03</div>
+                <h3 class="highlight-title">Scale</h3>
+                <p class="highlight-desc">Building solutions that can grow with your business.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — WHAT WE DO
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Core Capabilities</span>
+          </div>
+          <h2 class="section-title">What We Do</h2>
+          <p class="section-subtitle">
+            Comprehensive digital and technological capabilities crafted to elevate modern brands, enterprises, and innovators.
+          </p>
+        </div>
+
+        <div class="what-we-do-grid">
+          <!-- Card 1: Web Development -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-icon-box">🌐</div>
+            <h3 class="what-title">Web Development</h3>
+            <p class="what-desc">Modern, responsive and high-performance websites.</p>
+          </div>
+
+          <!-- Card 2: Mobile Applications -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-icon-box">📱</div>
+            <h3 class="what-title">Mobile Applications</h3>
+            <p class="what-desc">User-friendly mobile applications for modern businesses.</p>
+          </div>
+
+          <!-- Card 3: AI Agents -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-icon-box">🤖</div>
+            <h3 class="what-title">AI Agents</h3>
+            <p class="what-desc">Intelligent AI agents that automate tasks and improve customer experiences.</p>
+          </div>
+
+          <!-- Card 4: Custom Software -->
+          <div class="what-card reveal-on-scroll">
+            <div class="what-icon-box">⚙️</div>
+            <h3 class="what-title">Custom Software</h3>
+            <p class="what-desc">Business-specific software designed around real requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOME — CTA BANNER
+         ========================================================================== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="home-cta-banner reveal-on-scroll">
+          <div class="cta-banner-content">
+            <h3 class="cta-banner-title">Have an Idea? Let's Build It.</h3>
+            <p class="cta-banner-desc">
+              Tell us what you're planning. We'll help turn your idea into a practical digital solution.
+            </p>
+          </div>
+          <div class="cta-banner-btn">
+            <a href="#contact" class="btn btn-primary" id="homeCtaConversationBtn">
+              Start a Conversation &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. UNIQUENESS PAGE / SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="uniqueness">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Why Choose Us</span>
+          </div>
+          <h2 class="section-title">What Makes Sefron Different?</h2>
+          <p class="section-subtitle">
+            We operate at the intersection of business strategy, modern software engineering, and intelligent AI automation.
+          </p>
+        </div>
+
+        <!-- 5 Uniqueness Cards -->
+        <div class="uniqueness-grid">
+          <!-- Card 1 -->
+          <div class="unique-card reveal-on-scroll">
+            <div class="unique-badge">01 — AI-FIRST THINKING</div>
+            <h3 class="unique-title">AI-First Thinking</h3>
+            <p class="unique-desc">
+              We don't simply build software. We identify where artificial intelligence can make products smarter, faster and more useful.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="unique-card reveal-on-scroll">
+            <div class="unique-badge">02 — ONE PARTNER</div>
+            <h3 class="unique-title">One Partner, Multiple Solutions</h3>
+            <p class="unique-desc">
+              From website development to mobile apps, AI agents and custom software, clients can work with one technology partner instead of multiple vendors.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="unique-card reveal-on-scroll">
+            <div class="unique-badge">03 — BUSINESS-FOCUSED</div>
+            <h3 class="unique-title">Business-Focused Development</h3>
+            <p class="unique-desc">
+              Every solution starts with understanding the actual business problem, not simply choosing a technology.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="unique-card reveal-on-scroll">
+            <div class="unique-badge">04 — PRODUCT + SERVICE</div>
+            <h3 class="unique-title">Product + Service Mindset</h3>
+            <p class="unique-desc">
+              We don't only build solutions for clients. We also develop our own digital products and SaaS platforms.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="unique-card reveal-on-scroll">
+            <div class="unique-badge">05 — BUILT TO SCALE</div>
+            <h3 class="unique-title">Built to Scale</h3>
+            <p class="unique-desc">
+              Our solutions are designed with maintainability, performance, security and future expansion in mind.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visual Comparison: Traditional Approach vs Sefron Approach -->
+        <div class="comparison-wrapper reveal-on-scroll">
+          <div class="comparison-header">
+            <h3 class="comparison-title">The Strategic Advantage</h3>
+            <p style="color: var(--text-muted); font-size: 0.9375rem;">
+              See how partnering with Sefron Technologies eliminates project bottlenecks and fragmented execution.
+            </p>
+          </div>
+
+          <div class="comparison-grid">
+            <!-- Traditional Approach Card -->
+            <div class="comparison-card traditional">
+              <div class="comparison-card-top">
+                <h4 class="comp-approach-title">Traditional Approach</h4>
+                <span class="comp-badge bad">Fragmented & Inefficient</span>
+              </div>
+              <p style="color: #94A3B8; font-size: 0.875rem; margin-bottom: 16px;">
+                Managing isolated freelancers and disjointed agencies leads to miscommunication, tech debt, and budget overruns.
+              </p>
+              <div class="flow-sequence">
+                <span class="flow-step traditional-step">Idea</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step traditional-step">Multiple Vendors</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step traditional-step issue">Communication Issues</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step traditional-step issue">Delays</span>
+              </div>
+            </div>
+
+            <!-- Sefron Approach Card -->
+            <div class="comparison-card sefron">
+              <div class="comparison-card-top">
+                <h4 class="comp-approach-title">Sefron Approach</h4>
+                <span class="comp-badge good">Unified & Streamlined</span>
+              </div>
+              <p style="color: #CBD5E1; font-size: 0.875rem; margin-bottom: 16px;">
+                A single dedicated technology partner providing end-to-end design, full-stack development, and scale.
+              </p>
+              <div class="flow-sequence">
+                <span class="flow-step sefron-step">Idea</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step sefron-step highlight">Sefron</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step sefron-step">Design</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step sefron-step">Development</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step sefron-step">Launch</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-step sefron-step highlight">Scale</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ABOUT PAGE / SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Who We Are</span>
+          </div>
+          <h2 class="section-title">About Sefron Technologies</h2>
+          <p class="section-subtitle">
+            Pioneering modern software engineering, intelligent AI agents, and enterprise digital solutions.
+          </p>
+        </div>
+
+        <!-- About Intro Lead -->
+        <div class="about-summary-box reveal-on-scroll">
+          <p class="about-lead-text">
+            Sefron Technologies is a technology company focused on building meaningful digital solutions for modern businesses. We combine software development, design and artificial intelligence to transform ideas into reliable digital products.
+          </p>
+        </div>
+
+        <!-- Vision & Mission -->
+        <div class="vision-mission-grid">
+          <!-- Vision -->
+          <div class="vm-card reveal-on-scroll">
+            <div class="vm-icon-tag">
+              <span>🎯</span>
+              <span>Our Vision</span>
+            </div>
+            <h3 class="vm-title">Building the Future</h3>
+            <p class="vm-desc">
+              To become a trusted technology partner for businesses building the future.
+            </p>
+          </div>
+
+          <!-- Mission -->
+          <div class="vm-card reveal-on-scroll">
+            <div class="vm-icon-tag">
+              <span>🚀</span>
+              <span>Our Mission</span>
+            </div>
+            <h3 class="vm-title">Accessible Advanced Technology</h3>
+            <p class="vm-desc">
+              To make advanced technology accessible to businesses through innovative, practical and scalable digital solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Values Cards -->
+        <div class="values-header reveal-on-scroll">
+          <h3 class="values-title">Our Guiding Values</h3>
+        </div>
+
+        <div class="values-grid">
+          <!-- Value 1: Innovation -->
+          <div class="value-card reveal-on-scroll">
+            <div class="value-icon-box">💡</div>
+            <h4 class="value-name">Innovation</h4>
+            <p class="value-desc">Continually exploring AI and modern technologies to create smarter solutions.</p>
+          </div>
+
+          <!-- Value 2: Quality -->
+          <div class="value-card reveal-on-scroll">
+            <div class="value-icon-box">⭐</div>
+            <h4 class="value-name">Quality</h4>
+            <p class="value-desc">Writing clean, robust, and tested code designed for high performance.</p>
+          </div>
+
+          <!-- Value 3: Trust -->
+          <div class="value-card reveal-on-scroll">
+            <div class="value-icon-box">🤝</div>
+            <h4 class="value-name">Trust</h4>
+            <p class="value-desc">Operating with full transparency, integrity, and client-centric collaboration.</p>
+          </div>
+
+          <!-- Value 4: Continuous Growth -->
+          <div class="value-card reveal-on-scroll">
+            <div class="value-icon-box">📈</div>
+            <h4 class="value-name">Continuous Growth</h4>
+            <p class="value-desc">Evolving architectures and expanding capabilities as partner businesses scale.</p>
+          </div>
+        </div>
+
+        <!-- Company Timeline -->
+        <div class="timeline-box reveal-on-scroll">
+          <h3 class="timeline-title">The Sefron Journey</h3>
+          <div class="timeline-steps">
+            <div class="timeline-step">
+              <div class="timeline-marker">01</div>
+              <h4 class="timeline-step-title">Foundation</h4>
+              <p class="timeline-step-desc">Established with a vision to deliver premium B2B technology engineering.</p>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">02</div>
+              <h4 class="timeline-step-title">Expansion</h4>
+              <p class="timeline-step-desc">Expanded multi-platform web, mobile, and custom enterprise software development.</p>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">03</div>
+              <h4 class="timeline-step-title">AI Integration</h4>
+              <p class="timeline-step-desc">Pioneered custom AI Agent development and autonomous workflow systems.</p>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-marker">04</div>
+              <h4 class="timeline-step-title">Scale & SaaS</h4>
+              <p class="timeline-step-desc">Scaling B2B client partnerships and building proprietary digital SaaS platforms.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SERVICES PAGE / SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Comprehensive Solutions</span>
+          </div>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">
+            Technology solutions designed around your business needs.
+          </p>
+        </div>
+
+        <!-- 6 Service Cards -->
+        <div class="services-grid">
+          
+          <!-- Service 1: Web Development -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">🌐</div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-desc">
+                High-performance, secure, and modern websites crafted for corporate authority, lead generation, and web applications.
+              </p>
+              <div class="service-features-list">
+                <span class="service-feature-pill">Corporate websites</span>
+                <span class="service-feature-pill">Business websites</span>
+                <span class="service-feature-pill">E-commerce platforms</span>
+                <span class="service-feature-pill">Landing pages</span>
+                <span class="service-feature-pill">Admin dashboards</span>
+                <span class="service-feature-pill">Web applications</span>
+              </div>
+            </div>
+            <button class="service-learn-more" data-service-modal="web" aria-label="Learn more about Web Development">
+              Learn More <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Service 2: Mobile App Development -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">📱</div>
+              <h3 class="service-title">Mobile App Development</h3>
+              <p class="service-desc">
+                Fluid, native, and cross-platform mobile apps delivering engaging user experiences across all mobile devices.
+              </p>
+              <div class="service-features-list">
+                <span class="service-feature-pill">Android applications</span>
+                <span class="service-feature-pill">iOS applications</span>
+                <span class="service-feature-pill">Cross-platform applications</span>
+                <span class="service-feature-pill">Business apps</span>
+                <span class="service-feature-pill">Customer applications</span>
+              </div>
+            </div>
+            <button class="service-learn-more" data-service-modal="mobile" aria-label="Learn more about Mobile App Development">
+              Learn More <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Service 3: AI Agent Development -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">🤖</div>
+              <h3 class="service-title">AI Agent Development</h3>
+              <p class="service-desc">
+                Custom intelligent AI agents and automated workflows that streamline processes and elevate customer satisfaction 24/7.
+              </p>
+              <div class="service-features-list">
+                <span class="service-feature-pill">AI customer-support agents</span>
+                <span class="service-feature-pill">Website AI assistants</span>
+                <span class="service-feature-pill">Business AI agents</span>
+                <span class="service-feature-pill">Workflow automation</span>
+                <span class="service-feature-pill">Knowledge-based AI assistants</span>
+                <span class="service-feature-pill">Lead qualification agents</span>
+              </div>
+            </div>
+            <button class="service-learn-more" data-service-modal="ai" aria-label="Learn more about AI Agent Development">
+              Learn More <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Service 4: Custom Software Development -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">⚙️</div>
+              <h3 class="service-title">Custom Software Development</h3>
+              <p class="service-desc">
+                Tailor-made software systems engineered around your exact business logic, workflow bottlenecks, and data infrastructure.
+              </p>
+              <div class="service-features-list">
+                <span class="service-feature-pill">Business management systems</span>
+                <span class="service-feature-pill">CRM systems</span>
+                <span class="service-feature-pill">Internal tools</span>
+                <span class="service-feature-pill">Dashboards</span>
+                <span class="service-feature-pill">Automation platforms</span>
+                <span class="service-feature-pill">Enterprise software</span>
+              </div>
+            </div>
+            <button class="service-learn-more" data-service-modal="custom" aria-label="Learn more about Custom Software Development">
+              Learn More <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Service 5: UI/UX Design -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">🎨</div>
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-desc">
+                Modern, intuitive, and conversion-focused interface designs that make complex digital workflows effortless.
+              </p>
+              <div class="service-features-list">
+                <span class="service-feature-pill">Website UI</span>
+                <span class="service-feature-pill">Mobile UI</span>
+                <span class="service-feature-pill">Dashboard design</span>
+                <span class="service-feature-pill">Prototyping</span>
+                <span class="service-feature-pill">Design systems</span>
+              </div>
+            </div>
+            <button class="service-learn-more" data-service-modal="uiux" aria-label="Learn more about UI/UX Design">
+              Learn More <span>&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Service 6: SaaS Product Development -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <div class="service-icon-box">☁️</div>
+              <h3 class="service-title">SaaS Product Development</h3>
+              <p class="service-desc">
+                End-to-end cloud SaaS engineering, multi-tenant architectures, subscription billing, and scalable product MVPs.
+              </p>
+              <div class="service-features-list">
+                <span class="service-feature-pill">SaaS platforms</span>
+                <span class="service-feature-pill">Subscription systems</span>
+                <span class="service-feature-pill">Multi-user applications</span>
+                <span class="service-feature-pill">Cloud-based products</span>
+                <span class="service-feature-pill">Product MVP development</span>
+              </div>
+            </div>
+            <button class="service-learn-more" data-service-modal="saas" aria-label="Learn more about SaaS Product Development">
+              Learn More <span>&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Service Bottom CTA -->
+        <div class="services-cta-banner reveal-on-scroll">
+          <div>
+            <h3 class="services-cta-title">Have a Specific Requirement?</h3>
+            <p class="services-cta-desc">
+              Let's discuss your idea and find the right technology solution.
+            </p>
+          </div>
+          <div>
+            <a href="#contact" class="btn btn-primary" id="servicesCtaBtn">
+              Contact Sefron &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4b. FEATURED PROJECTS (PREMIUM HORIZONTAL SCROLL CAROUSEL)
+         ========================================================================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Featured Case Studies</span>
+          </div>
+          <h2 class="section-title">Our Recent Projects</h2>
+          <p class="section-subtitle">
+            Engineered digital products, flagship retail ecosystems, and enterprise AI platforms built by Sefron Technologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="projects-carousel-container reveal-on-scroll" id="projectsCarouselContainer">
+          
+          <!-- Projects Controls Bar -->
+          <div class="team-controls-bar">
+            <div class="team-scroll-hint">
+              <span class="hint-pulse-icon">&bull;</span>
+              <span class="hint-text">Scroll or drag to explore live projects</span>
+            </div>
+            <div class="team-nav-arrows">
+              <button class="team-arrow-btn" id="projectPrevBtn" aria-label="Previous project" title="Previous project" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              </button>
+              <button class="team-arrow-btn" id="projectNextBtn" aria-label="Next project" title="Next project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Horizontal Scroll Track Wrapper -->
+          <div class="projects-track-wrapper" id="projectsTrackWrapper" tabindex="0" role="region" aria-label="Featured Projects carousel">
+            <div class="projects-track" id="projectsTrack">
+
+              <!-- Project 1: Sefron Tech Flagship Store -->
+              <article class="project-card featured-project-card">
+                <div class="project-card-inner">
+                  
+                  <!-- Top: Logo + Name + Category (Above Image) -->
+                  <div class="project-card-top-header">
+                    <div class="project-brand-badge">
+                      <div class="project-brand-icon sefron-brand-icon">
+                        <img src="/assets/logo-mark.svg" alt="Sefron Icon" class="project-icon-img">
+                      </div>
+                      <div class="project-brand-info">
+                        <h3 class="project-card-title">Sefron Tech &mdash; Flagship Store</h3>
+                        <span class="project-category">E-Commerce &middot; Flagship Platform</span>
+                      </div>
+                    </div>
+                    <a href="https://sefron-tech-07.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-status-pill" aria-label="Open Sefron Tech live on Vercel">
+                      <span class="status-live-dot"></span> Live On Vercel
+                    </a>
+                  </div>
+
+                  <!-- Middle: Project Screenshot Image -->
+                  <div class="project-image-wrap">
+                    <a href="https://sefron-tech-07.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-image-link" aria-label="Open Sefron Tech Flagship Store live deployment">
+                      <img src="/assets/projects/sefron_store.png" alt="Sefron Tech Flagship Store E-Commerce Platform" class="project-card-img" loading="lazy">
+                      <span class="image-hover-overlay">Open Live App &nearr;</span>
+                    </a>
+                  </div>
+
+                  <!-- Under Image: Live URL Link + Details + Actions -->
+                  <div class="project-card-content">
+                    <a href="https://sefron-tech-07.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-url-badge" aria-label="Visit sefron-tech-07.vercel.app">
+                      <span class="url-live-dot"></span>
+                      <span class="url-text">https://sefron-tech-07.vercel.app/</span>
+                      <span class="url-arrow">&nearr;</span>
+                    </a>
+
+                    <p class="project-card-desc">
+                      Modern, high-performance electronics e-commerce platform engineered with curated tech editions, real-time cart state management, category filtering, responsive checkout UI, and custom administrative dashboard integration.
+                    </p>
+
+                    <div class="project-tech-tags">
+                      <span class="tech-tag">React / Next.js</span>
+                      <span class="tech-tag">Vercel Cloud</span>
+                      <span class="tech-tag">E-Commerce UI</span>
+                      <span class="tech-tag">Cart Architecture</span>
+                      <span class="tech-tag">Payment Gateway</span>
+                    </div>
+
+                    <div class="project-card-actions">
+                      <a href="https://sefron-tech-07.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-cta-btn">
+                        <span>Visit Live Store</span>
+                        <span class="btn-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- Project 2: ResQ-X AI Autonomous Drone Command -->
+              <article class="project-card featured-project-card">
+                <div class="project-card-inner">
+                  
+                  <!-- Top: Logo + Name + Category (Above Image) -->
+                  <div class="project-card-top-header">
+                    <div class="project-brand-badge">
+                      <div class="project-brand-icon resq-icon-wrap">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1"></path></svg>
+                      </div>
+                      <div class="project-brand-info">
+                        <h3 class="project-card-title">ResQ-X &mdash; AI Drone Command</h3>
+                        <span class="project-category">AI Tactical &middot; Autonomous Rescue</span>
+                      </div>
+                    </div>
+                    <a href="https://res-q-drone.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-status-pill" aria-label="Open ResQ-X live on Vercel">
+                      <span class="status-live-dot"></span> Live On Vercel
+                    </a>
+                  </div>
+
+                  <!-- Middle: Project Screenshot Image -->
+                  <div class="project-image-wrap">
+                    <a href="https://res-q-drone.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-image-link" aria-label="Open ResQ-X AI Drone Command live deployment">
+                      <img src="/assets/projects/resq_drone.png" alt="ResQ-X AI Disaster Intelligence & Autonomous Rescue Platform" class="project-card-img" loading="lazy">
+                      <span class="image-hover-overlay">Open Live App &nearr;</span>
+                    </a>
+                  </div>
+
+                  <!-- Under Image: Live URL Link + Details + Actions -->
+                  <div class="project-card-content">
+                    <a href="https://res-q-drone.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-url-badge" aria-label="Visit res-q-drone.vercel.app">
+                      <span class="url-live-dot"></span>
+                      <span class="url-text">https://res-q-drone.vercel.app/</span>
+                      <span class="url-arrow">&nearr;</span>
+                    </a>
+
+                    <p class="project-card-desc">
+                      Mission-critical tactical disaster intelligence and autonomous drone fleet command dashboard for Chennai Flood Response with real-time Edge AI survivor detection, LoRa mesh tracking, thermal verification, and automated rescue dispatch.
+                    </p>
+
+                    <div class="project-tech-tags">
+                      <span class="tech-tag">Next.js / React</span>
+                      <span class="tech-tag">Edge AI Detection</span>
+                      <span class="tech-tag">LoRa Mesh GIS</span>
+                      <span class="tech-tag">Fleet Telemetry</span>
+                      <span class="tech-tag">Vercel Cloud</span>
+                    </div>
+
+                    <div class="project-card-actions">
+                      <a href="https://res-q-drone.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-cta-btn">
+                        <span>Launch Mission Control</span>
+                        <span class="btn-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- Project 3: FurniCraft Studio & Atelier -->
+              <article class="project-card featured-project-card">
+                <div class="project-card-inner">
+                  
+                  <!-- Top: Logo + Name + Category (Above Image) -->
+                  <div class="project-card-top-header">
+                    <div class="project-brand-badge">
+                      <div class="project-brand-icon furnicraft-icon-wrap">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                      </div>
+                      <div class="project-brand-info">
+                        <h3 class="project-card-title">FurniCraft &mdash; Studio & Atelier</h3>
+                        <span class="project-category">Luxury Furniture &middot; E-Commerce & ERP</span>
+                      </div>
+                    </div>
+                    <a href="https://furniture-shop-dun.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-status-pill" aria-label="Open FurniCraft live on Vercel">
+                      <span class="status-live-dot"></span> Live On Vercel
+                    </a>
+                  </div>
+
+                  <!-- Middle: Project Screenshot Image -->
+                  <div class="project-image-wrap">
+                    <a href="https://furniture-shop-dun.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-image-link" aria-label="Open FurniCraft Studio & Atelier live deployment">
+                      <img src="/assets/projects/furnicraft.png" alt="FurniCraft Studio & Atelier - Luxury Furniture & Operations Dashboard" class="project-card-img" loading="lazy">
+                      <span class="image-hover-overlay">Open Live App &nearr;</span>
+                    </a>
+                  </div>
+
+                  <!-- Under Image: Live URL Link + Details + Actions -->
+                  <div class="project-card-content">
+                    <a href="https://furniture-shop-dun.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-url-badge" aria-label="Visit furniture-shop-dun.vercel.app">
+                      <span class="url-live-dot"></span>
+                      <span class="url-text">https://furniture-shop-dun.vercel.app/</span>
+                      <span class="url-arrow">&nearr;</span>
+                    </a>
+
+                    <p class="project-card-desc">
+                      Bespoke luxury furniture atelier and showroom management ERP engineered with real-time sales telemetry, dynamic product catalog categorization, multi-tier inventory tracking, and seamless client order processing workflows.
+                    </p>
+
+                    <div class="project-tech-tags">
+                      <span class="tech-tag">React / Next.js</span>
+                      <span class="tech-tag">Vercel Cloud</span>
+                      <span class="tech-tag">Showroom ERP</span>
+                      <span class="tech-tag">Catalog Engine</span>
+                      <span class="tech-tag">Sales Analytics</span>
+                    </div>
+
+                    <div class="project-card-actions">
+                      <a href="https://furniture-shop-dun.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-cta-btn">
+                        <span>Visit Live Showroom</span>
+                        <span class="btn-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+              <!-- Project 4: Sefron House Multi-Cuisine Restaurant -->
+              <article class="project-card featured-project-card">
+                <div class="project-card-inner">
+                  
+                  <!-- Top: Logo + Name + Category (Above Image) -->
+                  <div class="project-card-top-header">
+                    <div class="project-brand-badge">
+                      <div class="project-brand-icon sefron-house-icon-wrap" aria-hidden="true">
+                        <span class="house-brand-letter">S</span>
+                      </div>
+                      <div class="project-brand-info">
+                        <h3 class="project-card-title">Sefron House &mdash; Restaurant</h3>
+                        <span class="project-category">Multi-Cuisine Dining &middot; Food Tech & ERP</span>
+                      </div>
+                    </div>
+                    <a href="https://sefron-house-75ra.vercel.app" target="_blank" rel="noopener noreferrer" class="project-status-pill" aria-label="Open Sefron House live on Vercel">
+                      <span class="status-live-dot"></span> Live On Vercel
+                    </a>
+                  </div>
+
+                  <!-- Middle: Project Screenshot Image -->
+                  <div class="project-image-wrap">
+                    <a href="https://sefron-house-75ra.vercel.app" target="_blank" rel="noopener noreferrer" class="project-image-link" aria-label="Open Sefron House Multi-Cuisine Restaurant live deployment">
+                      <img src="/assets/projects/sefron_house.png" alt="Sefron House Multi-Cuisine Restaurant - Food Ordering & Table Reservation Platform" class="project-card-img" loading="lazy">
+                      <span class="image-hover-overlay">Open Live App &nearr;</span>
+                    </a>
+                  </div>
+
+                  <!-- Under Image: Live URL Link + Admin Credentials + Details + Actions -->
+                  <div class="project-card-content">
+                    <a href="https://sefron-house-75ra.vercel.app" target="_blank" rel="noopener noreferrer" class="project-url-badge" aria-label="Visit sefron-house-75ra.vercel.app">
+                      <span class="url-live-dot"></span>
+                      <span class="url-text">https://sefron-house-75ra.vercel.app</span>
+                      <span class="url-arrow">&nearr;</span>
+                    </a>
+
+                    <!-- Admin Credentials Under The Link -->
+                    <div class="project-credentials-box">
+                      <div class="credentials-header">
+                        <span class="credentials-badge-icon">🔐</span>
+                        <span class="credentials-badge-label">Admin Orders Portal Access</span>
+                      </div>
+                      <div class="credentials-pills">
+                        <div class="credential-item">
+                          <span class="cred-label">User ID:</span>
+                          <code class="cred-val">admin</code>
+                        </div>
+                        <div class="credential-item">
+                          <span class="cred-label">Pass:</span>
+                          <code class="cred-val">Rahul@2008</code>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="project-card-desc">
+                      Immersive multi-cuisine dining and hospitality portal featuring an extensive digital menu from authentic South Indian and North Indian classics to Italian and Asian delicacies, dynamic table reservations, and an administrative order management dashboard.
+                    </p>
+
+                    <div class="project-tech-tags">
+                      <span class="tech-tag">React / Next.js</span>
+                      <span class="tech-tag">Vercel Cloud</span>
+                      <span class="tech-tag">Multi-Cuisine Menu</span>
+                      <span class="tech-tag">Table Reservation</span>
+                      <span class="tech-tag">Admin Orders Portal</span>
+                    </div>
+
+                    <div class="project-card-actions">
+                      <a href="https://sefron-house-75ra.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-cta-btn">
+                        <span>Visit Sefron House</span>
+                        <span class="btn-icon">&nearr;</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Projects Footer Progress -->
+          <div class="team-carousel-footer">
+            <div class="team-progress-track" aria-hidden="true">
+              <div class="team-progress-bar" id="projectProgressBar"></div>
+            </div>
+            <div class="team-dots-container" id="projectDotsContainer" role="tablist" aria-label="Project slides">
+              <button class="team-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Go to project 1: Sefron Tech Store"></button>
+              <button class="team-dot" data-index="1" role="tab" aria-selected="false" aria-label="Go to project 2: ResQ-X AI Drone Command"></button>
+              <button class="team-dot" data-index="2" role="tab" aria-selected="false" aria-label="Go to project 3: FurniCraft Studio & Atelier"></button>
+              <button class="team-dot" data-index="3" role="tab" aria-selected="false" aria-label="Go to project 4: Sefron House Multi-Cuisine Restaurant"></button>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. TEAM PAGE / SECTION (PREMIUM HORIZONTAL SCROLL CAROUSEL)
+         ========================================================================== -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Leadership & Engineering</span>
+          </div>
+          <h2 class="section-title">Meet Our Team</h2>
+          <p class="section-subtitle">
+            The people building the future of Sefron Technologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="team-carousel-container reveal-on-scroll" id="teamCarouselContainer">
+          
+          <!-- Carousel Top Navigation & Controls Bar -->
+          <div class="team-controls-bar">
+            <div class="team-scroll-hint">
+              <span class="hint-pulse-icon">&bull;</span>
+              <span class="hint-text">Scroll or drag to explore leadership</span>
+            </div>
+            
+            <div class="team-nav-arrows">
+              <button class="team-arrow-btn" id="teamPrevBtn" aria-label="Previous team member" title="Previous member" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              </button>
+              <button class="team-arrow-btn" id="teamNextBtn" aria-label="Next team member" title="Next member">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Horizontal Scroll Track Wrapper -->
+          <div class="team-track-wrapper" id="teamTrackWrapper" tabindex="0" role="region" aria-label="Meet Our Team carousel" aria-roledescription="carousel">
+            <div class="team-track" id="teamTrack">
+              
+              <!-- Card 1: Mohamed Siddiq.M -->
+              <article class="team-card" data-index="0" aria-roledescription="slide" aria-label="1 of 4: Mohamed Siddiq.M">
+                <div class="team-card-inner">
+                  <div class="team-card-image-wrap">
+                    <img src="/assets/team/mohamed_siddiq.jpg" alt="Mohamed Siddiq.M - Chief Executive Officer & Founder" class="team-card-img photo-siddiq" loading="lazy">
+                    <span class="team-role-badge badge-ceo">CEO & Founder</span>
+                  </div>
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Mohamed Siddiq.M</h3>
+                    <div class="team-card-role">Chief Executive Officer & Founder</div>
+                    <p class="team-card-desc">
+                      Visionary entrepreneur steering Sefron's technology roadmap, enterprise B2B client partnerships, and AI innovations.
+                    </p>
+                    <div class="team-card-socials">
+                      <a href="https://www.linkedin.com/in/mohamed-siddiq-m-520848385" target="_blank" rel="noopener noreferrer" class="social-btn social-linkedin" aria-label="Mohamed Siddiq LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                      </a>
+                      <a href="https://www.instagram.com/freak_ysid?stkn=MmtkNWNuajJyazd3" target="_blank" rel="noopener noreferrer" class="social-btn social-instagram" aria-label="Mohamed Siddiq Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2: Sanjai.M -->
+              <article class="team-card" data-index="1" aria-roledescription="slide" aria-label="2 of 4: Sanjai.M">
+                <div class="team-card-inner">
+                  <div class="team-card-image-wrap">
+                    <img src="/assets/team/sanjai_m.jpg" alt="Sanjai.M - Chief Financial Officer & Co-Founder" class="team-card-img photo-sanjai" loading="lazy">
+                    <span class="team-role-badge badge-cfo">CFO & Co-Founder</span>
+                  </div>
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Sanjai.M</h3>
+                    <div class="team-card-role">Chief Financial Officer & Co-Founder</div>
+                    <p class="team-card-desc">
+                      Spearheading financial operations, strategic capitalization, corporate growth strategies, and fiscal management for scale.
+                    </p>
+                    <div class="team-card-socials">
+                      <a href="https://www.linkedin.com/in/sanjai-m-9705a3387?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn social-linkedin" aria-label="Sanjai M LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                      </a>
+                      <a href="https://www.instagram.com/iam_sxnjxi.x?utm_source=qr&stkn=enZ3aXhlZjU3MXY1" target="_blank" rel="noopener noreferrer" class="social-btn social-instagram" aria-label="Sanjai M Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3: Ahamed Faizal -->
+              <article class="team-card" data-index="2" aria-roledescription="slide" aria-label="3 of 4: Ahamed Faizal">
+                <div class="team-card-inner">
+                  <div class="team-card-image-wrap">
+                    <img src="/assets/team/ahamed_faizal.jpg" alt="Ahamed Faizal - Chief Technical Officer & Co-Founder" class="team-card-img photo-faizal" loading="lazy">
+                    <span class="team-role-badge badge-cto">CTO & Co-Founder</span>
+                  </div>
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Ahamed Faizal</h3>
+                    <div class="team-card-role">Chief Technical Officer & Co-Founder</div>
+                    <p class="team-card-desc">
+                      Engineering leader directing enterprise AI architectures, full-stack infrastructure, high-throughput backend systems, and scalable cloud innovations.
+                    </p>
+                    <div class="team-card-socials">
+                      <a href="https://www.linkedin.com/in/ahamed-faizal-a-109624366?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn social-linkedin" aria-label="Ahamed Faizal LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                      </a>
+                      <a href="https://www.instagram.com/do_0r._die?stkn=MWNjenpzNnJkNjd1MQ==" target="_blank" rel="noopener noreferrer" class="social-btn social-instagram" aria-label="Ahamed Faizal Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4: Rahul.P -->
+              <article class="team-card" data-index="3" aria-roledescription="slide" aria-label="4 of 4: Rahul.P">
+                <div class="team-card-inner">
+                  <div class="team-card-image-wrap">
+                    <img src="/assets/team/rahul_p.jpg" alt="Rahul.P - Chief Product Officer & Co-Founder" class="team-card-img photo-rahul" loading="lazy">
+                    <span class="team-role-badge badge-cpo">CPO & Co-Founder</span>
+                  </div>
+                  <div class="team-card-content">
+                    <h3 class="team-card-name">Rahul.P</h3>
+                    <div class="team-card-role">Chief Product Officer & Co-Founder</div>
+                    <p class="team-card-desc">
+                      Leading product roadmap execution, enterprise solution delivery, client tech requirements, and scalable user-centric product engineering.
+                    </p>
+                    <div class="team-card-socials">
+                      <a href="https://www.linkedin.com/in/rahul-p-865705375?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn social-linkedin" aria-label="Rahul P LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                      </a>
+                      <a href="https://www.instagram.com/rahul_nathaniel18?stkn=MWM3cXUxYnhtcXI2Mw==" target="_blank" rel="noopener noreferrer" class="social-btn social-instagram" aria-label="Rahul P Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Carousel Footer: Progress Line & Interactive Pagination Dots -->
+          <div class="team-carousel-footer">
+            <div class="team-progress-track" aria-hidden="true">
+              <div class="team-progress-bar" id="teamProgressBar"></div>
+            </div>
+            <div class="team-dots-container" id="teamDotsContainer" role="tablist" aria-label="Team member slides">
+              <button class="team-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Go to slide 1: Mohamed Siddiq.M"></button>
+              <button class="team-dot" data-index="1" role="tab" aria-selected="false" aria-label="Go to slide 2: Sanjai.M"></button>
+              <button class="team-dot" data-index="2" role="tab" aria-selected="false" aria-label="Go to slide 3: Ahamed Faizal"></button>
+              <button class="team-dot" data-index="3" role="tab" aria-selected="false" aria-label="Go to slide 4: Rahul.P"></button>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. CONTACT US PAGE / SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            <span>Get in Touch</span>
+          </div>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-subtitle">
+            Have an idea, project or business requirement? Tell us about it.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          
+          <!-- Contact Information & Assurance Panel -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <div class="contact-info-card">
+              <div class="contact-icon-wrapper">✉️</div>
+              <div>
+                <h3 class="contact-card-title">Email Us Directly</h3>
+                <p class="contact-card-detail">
+                  <a href="mailto:sefrontechnologies07@gmail.com">sefrontechnologies07@gmail.com</a><br>
+                  Quick turnaround within 24 business hours.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-wrapper">📍</div>
+              <div>
+                <h3 class="contact-card-title">Headquarters</h3>
+                <p class="contact-card-detail">
+                  Sefron Technologies Innovation Hub<br>
+                  Global B2B & Enterprise Technology Services
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-icon-wrapper">⚡</div>
+              <div>
+                <h3 class="contact-card-title">What Happens Next?</h3>
+                <p class="contact-card-detail">
+                  1. Discovery & requirement analysis<br>
+                  2. Architectural consultation & roadmap<br>
+                  3. Dedicated project proposal with clear milestones
+                </p>
+              </div>
+            </div>
+
+            <a href="tel:+919003410301" class="contact-info-card contact-card-clickable" aria-label="Call +91 9003410301">
+              <div class="contact-icon-wrapper">📞</div>
+              <div>
+                <h3 class="contact-card-title">Call Us Directly</h3>
+                <p class="contact-card-detail">
+                  <span class="phone-number-highlight">+91 9003410301</span><br>
+                  Direct line for project inquiries &amp; consultations.
+                </p>
+              </div>
+            </a>
+
+            <!-- Excel Secure Storage Badge -->
+            <div class="excel-notice-box">
+              <span class="excel-icon">📊</span>
+              <span>
+                <strong>Enterprise Ingestion:</strong> Inquiries are safely processed via our verified server API and recorded to a secure spreadsheet registry.
+              </span>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-box reveal-on-scroll">
+            
+            <!-- Alert Banner -->
+            <div class="form-alert" id="contactFormAlert" role="alert"></div>
+
+            <form id="contactForm" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contactName" class="form-label">
+                  Your Full Name <span class="required-star">*</span>
+                </label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Mohamed Siddiq" required autocomplete="name">
+                <div class="validation-error" id="nameError">Please enter your name.</div>
+              </div>
+
+              <!-- Phone Number Input -->
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">
+                  Phone Number <span class="required-star">*</span>
+                </label>
+                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="e.g. +91 9876543210 or +1 234 567 8900" required autocomplete="tel">
+                <div class="validation-error" id="phoneError">Please enter a valid phone number.</div>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">
+                  Business Email Address <span class="required-star">*</span>
+                </label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="e.g. name@company.com" required autocomplete="email">
+                <div class="validation-error" id="emailError">Please enter a valid email address.</div>
+              </div>
+
+              <!-- Message Textarea -->
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">
+                  Project Requirement / Message <span class="required-star">*</span>
+                </label>
+                <textarea id="contactMessage" name="message" class="form-control" rows="5" placeholder="Tell us about your project, timeline, target features, or AI automation goals..." required></textarea>
+                <div class="validation-error" id="messageError">Please tell us about your requirement.</div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary submit-btn" id="contactSubmitBtn">
+                <span class="btn-text">Send Message &rarr;</span>
+                <span class="btn-spinner"></span>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Left: Brand Info & Direct Left-Corner Contact -->
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-brand-logo" aria-label="Sefron Technologies Home">
+            <img src="/assets/logo-mark-3d.png" alt="Sefron Technologies Mark" class="footer-logo-mark">
+            <span class="footer-logo-text">
+              <span class="footer-logo-name">SEFR<span class="brand-logo-o">O</span>N</span>
+              <span class="footer-logo-sub">TECHNOLOGIES</span>
+              <span class="footer-logo-tagline">BUILD · AUTOMATE · CREATE</span>
+            </span>
+          </a>
+          <div class="footer-tagline">We Build. We Innovate. We Scale.</div>
+          <p class="footer-desc">
+            Empowering startups, enterprises, and businesses worldwide with cutting-edge software development, AI agents, and scalable digital products.
+          </p>
+          
+          <!-- Direct Left Corner Company Contacts -->
+          <div class="footer-direct-contact">
+            <a href="tel:+919003410301" class="footer-contact-pill" aria-label="Call Sefron Technologies">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>+91 9003410301</span>
+            </a>
+            <a href="mailto:sefrontechnologies07@gmail.com" class="footer-contact-pill" aria-label="Email Sefron Technologies">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>sefrontechnologies07@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com/sefrontechnologies?utm_source=qr&stkn=MW5hdmYzNWNxdGxzdA==" target="_blank" rel="noopener noreferrer" class="footer-contact-pill" aria-label="Sefron Technologies Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>@sefrontechnologies</span>
+            </a>
+            <a href="https://youtube.com/@sefrontechnologies?si=bZHChKVBbRdbLq0r" target="_blank" rel="noopener noreferrer" class="footer-contact-pill" aria-label="Sefron Technologies YouTube Channel">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span>YouTube Channel</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle: Company Links -->
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#uniqueness" class="footer-link">Uniqueness</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#team" class="footer-link">Meet Our Team</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Connect -->
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/in/mohamed-siddiq-m-520848385" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/sefrontechnologies?utm_source=qr&stkn=MW5hdmYzNWNxdGxzdA==" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://youtube.com/@sefrontechnologies?si=bZHChKVBbRdbLq0r" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span>YouTube</span>
+            </a>
+            <a href="mailto:sefrontechnologies07@gmail.com" class="footer-social-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>sefrontechnologies07@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Sefron Technologies. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" data-legal-modal="privacy">Privacy Policy</a>
+          <a href="#" data-legal-modal="terms">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOGS
+       ========================================================================== -->
+  <!-- Service Details Modal -->
+  <div class="modal-overlay" id="serviceModal" role="dialog" aria-modal="true">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      <h3 class="modal-title" id="modalServiceTitle">Service Details</h3>
+      <div class="modal-body-text" id="modalServiceContent"></div>
+    </div>
+  </div>
+
+  <!-- Privacy Policy / Terms Modal -->
+  <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="legalModalClose" aria-label="Close dialog">&times;</button>
+      <h3 class="modal-title" id="legalModalTitle">Policy Details</h3>
+      <div class="modal-body-text" id="legalModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    &uarr;
+  </button>
+
+  <!-- Scripts -->
+  <script src="/js/tech-visual.js"></script>
+  <script src="/js/team-slider.js"></script>
+  <script type="module" src="/js/contact.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

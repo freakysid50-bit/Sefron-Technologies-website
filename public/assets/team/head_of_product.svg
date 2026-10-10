@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09122C" />
+      <stop offset="70%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="skin3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3CBB3" />
+      <stop offset="100%" stop-color="#DE9E7F" />
+    </linearGradient>
+    <linearGradient id="cloth3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="480" fill="url(#bg3)" />
+  <circle cx="200" cy="180" r="140" fill="#00C8FF" opacity="0.08" />
+
+  <!-- Shoulders & Outfit -->
+  <path d="M 50 480 L 115 320 C 140 295 165 290 200 290 C 235 290 260 295 285 320 L 350 480 Z" fill="url(#cloth3)" />
+  <path d="M 160 290 Q 200 330 240 290" stroke="#00A3FF" stroke-width="4" fill="none" />
+
+  <!-- Neck -->
+  <rect x="182" y="225" width="36" height="70" rx="8" fill="#DE9E7F" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="60" ry="76" fill="url(#skin3)" />
+
+  <!-- Hair (Modern sleek tech style) -->
+  <path d="M 130 180 C 130 95 160 90 200 90 C 240 90 270 95 270 180 C 270 240 260 260 250 270 C 240 230 245 140 230 130 C 215 120 185 120 170 130 C 155 140 160 230 150 270 C 140 260 130 240 130 180 Z" fill="#1A1824" />
+
+  <!-- Eyebrows & Eyes -->
+  <path d="M 165 172 Q 178 168 190 171" stroke="#1A1824" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 210 171 Q 222 168 235 172" stroke="#1A1824" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <ellipse cx="178" cy="183" rx="6" ry="5" fill="#1A1824" />
+  <ellipse cx="222" cy="183" rx="6" ry="5" fill="#1A1824" />
+  <circle cx="180" cy="181" r="2" fill="#FFFFFF" />
+  <circle cx="224" cy="181" r="2" fill="#FFFFFF" />
+
+  <!-- Nose & Smile -->
+  <path d="M 200 186 L 198 208 L 204 208" stroke="#B87352" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 188 228 Q 200 238 212 228" stroke="#334155" stroke-width="2.5" stroke-linecap="round" fill="none" />
+</svg>

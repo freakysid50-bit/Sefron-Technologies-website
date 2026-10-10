@@ -1,0 +1,28 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Contact Messages Collection
+    // Allows public website visitors to submit contact messages with validation.
+    // Prohibits public read, update, or delete access to protect customer privacy.
+    match /contactMessages/{messageId} {
+      allow create: if request.resource.data.keys().hasAll(['name', 'phone', 'email', 'message', 'createdAt'])
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() >= 2
+                    && request.resource.data.phone is string
+                    && request.resource.data.phone.size() >= 7
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() >= 5
+                    && request.resource.data.message is string
+                    && request.resource.data.message.size() >= 10
+                    && request.resource.data.createdAt != null;
+      allow read, update, delete: if false;
+    }
+
+    // Default deny all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
